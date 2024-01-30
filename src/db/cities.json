@@ -1,0 +1,28 @@
+{
+  "cities": [
+    { "state": "Delhi", "city": "Delhi" },
+    { "state": "Maharashtra", "city": "Mumbai" },
+    { "state": "West Bengal", "city": "Kolkata" },
+    { "state": "Karnataka", "city": "Bangalore" },
+    { "state": "Tamil Nadu", "city": "Chennai" },
+    { "state": "Telangana", "city": "Hyderabad" },
+    { "state": "Maharashtra", "city": "Pune" },
+    { "state": "Gujrat", "city": "Ahmadabad" },
+    { "state": "Gujrat", "city": "Surat" },
+    { "state": "Uttar Pradesh", "city": "Lucknow" },
+    { "state": "Maharashtra", "city": "Nagpur" },
+    { "state": "Uttar Pradesh", "city": "Mirzapur" },
+    { "state": "Gujrat", "city": "Vadodara" },
+    { "state": "Andhra Pradesh", "city": "Vishakhapatnam" },
+    { "state": "Madhya Pradesh", "city": "Bhopal" },
+    { "state": "Telangana", "city": "Kagaznagar" },
+    { "state": "Haryana", "city": "Panchkula" },
+    { "state": "Lakshadweep", "city": "Kavaratti" },
+    { "state": "Gujrat", "city": "Daman" },
+    { "state": "Goa", "city": "Panaji" },
+    { "state": "Arunachal Pradesh", "city": "Itanagar" },
+    { "state": "Nagaland", "city": "Kohima" },
+    { "state": "Sikkim", "city": "Gangtok" },
+    { "state": "Meghalaya", "city": "Shilong" }
+  ]
+}
