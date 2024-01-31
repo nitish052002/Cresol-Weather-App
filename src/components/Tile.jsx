@@ -1,8 +1,6 @@
-import React from 'react'
-import "./tile.css"
-import weather from "../assests/weather.svg"
-
-
+import React from "react";
+import "./tile.css";
+import weather from "../assests/weather.svg";
 
 /**
  * 
@@ -21,23 +19,21 @@ import weather from "../assests/weather.svg"
   
  }} 
  */
-const Tile = ({data,updateApplicationDataByCity}) => {
+const Tile = ({ data, updateApplicationDataByCity }) => {
   return (
-    <div className="tile-container" onClick={()=> {updateApplicationDataByCity(data.city.toLowerCase())}}>
-        <div className="city-name">
-          <p><b>{data.city}</b>, {data.state}</p>
-        </div>
-        <div className="temperature">
-            <div className="degree">
-              <span className='degree'><b>8°C</b></span>
-              <span className='season-type'>Rain</span>
-            </div>
-            <div className="icon">
-            <img src={weather} alt="" />
-            </div>
-        </div>
+    <div
+      className="tile-container"
+      onClick={() => {
+        updateApplicationDataByCity(data.city.toLowerCase());
+      }}
+    >
+      <div className="city-name">
+        <p>
+          <b>{data.city}</b>, {data.state}
+        </p>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Tile
+export default Tile;

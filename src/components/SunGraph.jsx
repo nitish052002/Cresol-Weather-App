@@ -1,13 +1,20 @@
+// Import necessary React and chart components, and the stylesheet
 import React from "react";
 import ReactApexChart from "react-apexcharts";
-import "./sungraph.css"
+import "./sungraph.css";
 
+/**
+ * SunGraph component to display a chart with a normal distribution pattern.
+ * @returns {JSX.Element} - Returns a JSX element representing the SunGraph.
+ */
 const SunGraph = () => {
+  // Function to generate points for a normal distribution curve
   const generateNormalDistributionPoints = () => {
     const points = [];
     const mean = 0; // Mean of the distribution
     const standardDeviation = 1; // Standard deviation of the distribution
 
+    // Generate points for the normal distribution curve
     for (let x = -5; x <= 5; x += 0.1) {
       const y =
         (1 / (standardDeviation * Math.sqrt(2 * Math.PI))) *
@@ -18,8 +25,10 @@ const SunGraph = () => {
     return points;
   };
 
+  // Generate data points for the normal distribution curve
   const normalDistributionData = generateNormalDistributionPoints();
 
+  // Configuration options for the ApexChart
   var options = {
     series: [
       {
@@ -62,14 +71,12 @@ const SunGraph = () => {
     grid: {
       show: false,
     },
-
     xaxis: {
       show: false,
     },
     yaxis: {
       show: false,
     },
-
     tooltip: {
       enabled: false,
     },
@@ -96,6 +103,7 @@ const SunGraph = () => {
     },
   };
 
+  // Render the ReactApexChart component with the defined options
   return (
     <ReactApexChart
       options={options}
@@ -106,4 +114,5 @@ const SunGraph = () => {
   );
 };
 
+// Export the SunGraph component as the default export
 export default SunGraph;

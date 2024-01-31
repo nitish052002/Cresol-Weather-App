@@ -1,0 +1,93 @@
+.weather-card {
+  width: 100%;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.weather-card .temperature-container {
+  display: flex;
+  align-items: center;
+}
+.weather-card .temperature-container .icon img {
+  height: 100px;
+  width: 100px;
+}
+.weather-card .temperature-container .degree {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.weather-card .pressure_and_humidity_container {
+  justify-content: space-between;
+  display: flex;
+  padding: 0 10px;
+}
+
+.weather-card .pressure_and_humidity_container .pressure,
+.weather-card .pressure_and_humidity_container .humidity {
+  padding: 10px 10px 0 10px;
+  height: 65px;
+  line-height: 1.2rem;
+  background-color: #f3fbff;
+  border-radius: 2px;
+  flex-grow: 1;
+}
+
+.weather-card .pressure_and_humidity_container .pressure {
+  margin-right: 0.55rem;
+}
+
+.weather-card .pressure_and_humidity_container .humidity {
+  margin-left: 0.55rem;
+}
+
+.pressure_and_humidity_container .pressure span,
+.pressure_and_humidity_container .humidity span {
+  font-weight: 900;
+}
+
+.pressure_and_humidity_container .pressure p,
+.pressure_and_humidity_container .humidity p {
+  font-weight: bold;
+}
+
+.weather-card .sun__graph .set-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 3rem 0;
+}
+
+
+.weather-card .sun__graph {
+  position: relative;
+}
+
+.weather-card .sun__graph  .rectangle {
+  position: absolute;
+  bottom: 24px;
+  background: white;
+  z-index: 10;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.weather-card .sun__graph .set-container .sunrise,
+.weather-card .sun__graph .set-container .sunset {
+  padding: 10px 8px;
+  width: 150px;
+  height: 80px;
+}
+
+.weather-card .sun__graph .set-container .sunrise span,
+.weather-card .sun__graph .set-container .sunset span {
+  font-weight: bold;
+}
+
+.weather-card .sun__graph .set-container .sunset {
+  text-align: right;
+}
