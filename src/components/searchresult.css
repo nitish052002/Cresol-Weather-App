@@ -1,0 +1,18 @@
+.result-container {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 5px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  position: absolute;
+  top: 76%;
+  z-index: 1;
+}
+
+.result-container .tile-container:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.result-container .tile-container:last-child {
+  border-radius: 0 0 10px 10px;
+}

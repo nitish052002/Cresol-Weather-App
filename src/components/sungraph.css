@@ -1,0 +1,5 @@
+/* Custom CSS to hide x-axis labels */
+.apexcharts-xaxis-labels {
+    display: none !important;
+  }
+  

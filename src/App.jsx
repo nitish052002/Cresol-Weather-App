@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-
+import Header from "./components/Header";
+import Loader from "./components/Loader";
+import WeatherCard from "./components/WeatherCard";
+import WeatherTab from "./components/WeatherTab";
 import { useDispatch, useSelector } from "react-redux";
 import { getCoords } from "./store/features/coordinateSlice";
 
@@ -47,7 +50,9 @@ function App() {
         <Loader />
       ) : (
         <>
-          
+          <Header />
+          <WeatherTab />
+          <WeatherCard />
         </>
       )}
     </main>

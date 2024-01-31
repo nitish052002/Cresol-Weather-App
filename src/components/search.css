@@ -1,0 +1,30 @@
+.search-container {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  padding: 1rem 1.8rem;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.search-container .city-input {
+  width: 100%;
+  font-size: 1.1rem;
+  margin: 0 12px;
+}
+
+.search-container:focus {
+  border: 1px solid red;
+}
+
+.search-container .location-icon {
+  position: absolute;
+  left: 18px;
+  top: 30px;
+}
+
+.search-container .search-icon {
+  position: absolute;
+  top: 30px;   
+  right: 16px;
+}

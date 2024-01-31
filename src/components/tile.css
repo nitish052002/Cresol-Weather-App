@@ -1,0 +1,39 @@
+.tile-container {
+    padding:5px 16px;     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;       
+    border-bottom: 1px solid #cacaca;
+    border-left: 1px solid #cacaca;
+    border-right: 1px solid #cacaca;
+    cursor: pointer;
+    background: white;
+}
+
+
+.tile-container .temperature {
+    display: flex;
+    align-items: center;
+}
+
+.tile-container .temperature .degree  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+}
+.tile-container .temperature .degree .season-type{
+    font-size: 0.70em;
+}
+
+.tile-container .temperature .icon {
+    width: 40px;
+    height: 40px;
+}
+.tile-container .temperature .icon img {
+    width: 100%;
+} 
+
+
+
+
+
